@@ -1,6 +1,6 @@
 <?php
 
 
-Route::group(['namespace' => 'Module\Demo\Http\Controllers'], function () {
+Route::group(['namespace' => 'MinhHao\Demo\Http\Controllers'], function () {
     Route::get('/demo', 'DemoController@getIndex');
 });

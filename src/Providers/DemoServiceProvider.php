@@ -1,5 +1,5 @@
 <?php
-namespace Module\Demo\Providers;
+namespace MinhHao\Demo\Providers;
 use Illuminate\Support\ServiceProvider;
 class DemoServiceProvider extends ServiceProvider
 {

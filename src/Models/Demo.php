@@ -1,5 +1,5 @@
 <?php
-namespace Module\Demo\Models;
+namespace MinhHao\Demo\Models;
 use Illuminate\Database\Eloquent\Model;
 class Demo extends Model
 {

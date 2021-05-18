@@ -78,7 +78,7 @@
                 },
                 "autoload": {
                     "psr-0" : {
-                        "Module\\Demo" : "src"
+                        "MinhHao\\Demo" : "src"
                     }
                 }
             }

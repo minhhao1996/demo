@@ -3,7 +3,7 @@
 namespace Module\Demo\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Module\Demo\Models\Demo;
+use MinhHao\Demo\Models\Demo;
 
 class DemoController extends Controller
 {
