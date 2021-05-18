@@ -8,7 +8,7 @@
     <title>Demo module</title>
 </head>
 <body>
-<h2>This is the first module of series about Laravelss</h2>
+<h2>package demo by Minh Hao</h2>
 </body>
 </html>
 
