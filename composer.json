@@ -69,7 +69,7 @@
         {
             "type": "package",
             "package": {
-                "name": "minhhao1996/demo",
+                "name": "minhhao/demo",
                 "version": "dev-master",
                 "source": {
                     "url": "git://github.com/minhhao1996/demo.git",
