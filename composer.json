@@ -1,11 +1,11 @@
 {
-    "name": "minhhao/demo",
+    "name": "minhhao/package",
     "description": "Hao create packet demo",
     "keywords": [
         "framework",
         "laravel"
     ],
-    "type": "package",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
@@ -18,7 +18,7 @@
         "fideloper/proxy": "^4.4",
         "laravel/framework": "8.40.*",
         "laravel/tinker": "^2.5",
-        "minhhao/demo": "1.0"
+        "minhhao/package": "1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -67,21 +67,8 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "minhhao/demo",
-                "version": "1.0",
-                "source": {
-                    "url": "git://github.com/minhhao1996/demo.git",
-                    "type": "git",
-                    "reference": "master"
-                },
-                "autoload": {
-                    "psr-0" : {
-                        "MinhHao\\Demo" : "src"
-                    }
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/minhhao1996/demo"
         }
     ]
 }
