@@ -1,74 +1,47 @@
 {
-    "name": "minhhao/demo",
-    "description": "Hao create package demo",
+    "name": "minhhao/laravel-minhhao",
+    "description": "A middleware to protect your work in progress from prying eyes",
     "keywords": [
-        "framework",
-        "laravel"
+        "minhhao",
+        "laravel-demo-minhhao"
     ],
-    "type": "package",
+    "homepage": "https://github.com/minhhao1996/demo",
     "license": "MIT",
     "authors": [
         {
             "name": "Minh Hao",
-            "email": "haole042@gmail.com"
+            "email": "haole042@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
-        "fideloper/proxy": "^4.4",
-        "laravel/framework": "8.40.*",
-        "laravel/tinker": "^2.5",
-        "minhhao/demo": "1.0"
+        "php" : "^7.4|^8.0",
+        "illuminate/support": "^7.0|^8.0"
     },
     "require-dev": {
-        "facade/ignition": "^2.5",
-        "fakerphp/faker": "^1.9.1",
-        "mockery/mockery": "^1.4.2",
-        "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^9.3.3"
+        "orchestra/testbench": "^5.0|^6.0",
+        "phpunit/phpunit": "^9.3"
     },
     "autoload": {
-        "classmap": [
-            "database/seeds",
-            "database/factories"
-        ],
         "psr-4": {
-            "App\\": "app/"
+            "MinhHao\\Demo": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": []
+            "MinhHao\\Demo\\Test\\": "tests"
         }
     },
     "scripts": {
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate"
-        ],
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover"
-        ]
+        "test": "vendor/bin/phpunit"
     },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MinhHao\\Demo\\DemoServiceProvider"
+            ]
+        }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/minhhao1996/demo"
-        }
-    ]
+    "prefer-stable": true
 }
